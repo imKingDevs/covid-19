@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #111;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+}
+
+#root{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    animation: scaleanime 2s linear infinite;
+}
+@keyframes scaleanime{
+    50%{
+        transform: scale(.5);
+    }
+}
+
+h2{
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+ul{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+li.card{
+    list-style: none;
+    width: 28%;
+    height: 45%;
+    background: brown;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li.card .card__main{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.card__main .card__inner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card__name{
+    font-size: 1.8em;
+}
+
+.card__name span{
+    font-size: .8em;
+}
+
+.card__total{
+    font-size: 3.5em;
+}
